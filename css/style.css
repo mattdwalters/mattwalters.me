@@ -1,18 +1,12 @@
-html, body { 
-	margin: 0; 
-	padding: 0; 
-	height: 100%; 
-	width: 100%; 
-}
-#profile-photo {
-	height: 250px;
-	width: 250px;
-}
 
 #logo {
-	height: 50px;
-	width: 50px;
+	height: 75px;
+	width: 75px;
 	display: inline-block;
+}
+
+#logo-container {
+	float: left;
 }
 
 .img-circle {
@@ -23,6 +17,9 @@ html, body {
 	color:#000;
 	text-decoration: none;
 	text-align: center;
+	letter-spacing: 1px;
+	font-size: 12px;
+	font-family: Montserrat;
 }
 
 .nav-button{
@@ -33,21 +30,23 @@ html, body {
 .nav-button:hover{
 	transition:all 0.2s;
 	text-decoration:none;
-	color: #bababa;
+	color: #fd4242;
 }
 
 #contact-button {
+	transition: all 0.3s ease-in-out;
 	border: 2px solid black;
-	padding-top: 0.75em;
+	padding: 0.75em 2em .75em 2em;
 	margin: 2.15em 10px 10px 15px;
+	border-radius: 25px;
 }
 
 #contact-button:hover {
 	transition: all 0.3s;
 	text-decoration: none;
-	margin-top: 2.00em;
-	color: #000;
-	box-shadow:0px 2px #b3b3b3;
+	color: #fff;
+	border-color: #fd4242;
+	background-color: #fd4242;
 }
 
 ul {
@@ -67,8 +66,36 @@ ul li a {
 }
 
 .jumbotron {
-	background-color: #c0c0c0!important;
+	background-color: #fff!important;
+	padding-top: 0px !important;
 	margin-bottom: 0px !important;
+}
+
+#greeting {
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	font-family: Raleway;
+	font-weight: bold;
+}
+
+#profile-photo {
+	height: 360px;
+	width: 360px;
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+}
+
+#profile-container {
+	margin-bottom: 0px;
+}
+
+.welcome-text {
+	margin-top: 2.5em;
+	font-size: 25px;
+	line-height: 40px;
+	font-size: 26px;
+	font-family: Montserrat;
 }
 
 .landing-text {
@@ -82,6 +109,7 @@ ul li a {
 	text-align:center;
 	color: #000;
 	background-color: #fff;
+	border-radius: 25px;
 }
 
 .boxed-button:hover {
@@ -92,13 +120,43 @@ ul li a {
 }
 
 .inline-link {
+	transition: font-size 0.3s ease-in-out;
 	text-decoration: none;
-	color: #fff;
+	color: #fd4242;
 }
 
 .inline-link:hover {
-	transition: all 0.3s;
+	font-weight: bold;
 	text-decoration: none;
-	color: #000;
-	font-size:22px;
+	color: #fd4242;
+	font-size: 28px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#about {
+	margin: 1em 0px 1em 0px;
+	text-align: center;
+	font-family: Raleway;
+	font-weight: bold;
+	color: #fff;
+}
+
+#about-profile {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	display: block;
+	margin: auto;
 }
