@@ -42,11 +42,9 @@
 }
 
 #contact-button:hover {
-	transition: all 0.3s;
 	text-decoration: none;
-	color: #fff;
+	color: #fd4242;
 	border-color: #fd4242;
-	background-color: #fd4242;
 }
 
 ul {
@@ -103,22 +101,6 @@ ul li a {
 	text-align:center;
 }
 
-.boxed-button {
-	border: 3px solid black;
-	border-radius: 50px;
-	text-align:center;
-	color: #000;
-	background-color: #fff;
-	border-radius: 25px;
-}
-
-.boxed-button:hover {
-	transition: all 0.3s;
-	text-decoration: none;
-	color: #fff;
-	background-color: #000;
-}
-
 .inline-link {
 	transition: font-size 0.3s ease-in-out;
 	text-decoration: none;
@@ -153,10 +135,49 @@ ul li a {
 }
 
 #about-profile {
-	border: 2px solid #fff;
+	border: 4px solid #fff;
 	border-radius: 50%;
-	height: 250px;
-	width: 250px;
+	height: 300px;
+	width: 300px;
 	display: block;
 	margin: auto;
+}
+
+#about-button-container {
+	text-align:center;
+	padding-top: 3em;
+}
+
+.about-button {
+	font-family: Montserrat;
+	transition: all 0.2s;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 0.75em 2em .75em 2em;
+	border-radius: 25px;
+	margin: 0em 1em 0em 1em;
+}
+
+.about-button:hover {
+	text-decoration: none;
+	color: #fd4242;
+	border-color: #fff;
+	background-color: #fff;
+}
+
+.about-container {
+	color: #fff;
+	font-size: 30px;
+}
+
+.about-text {
+	font-size: 20px !important;
+}
+
+#projects {
+	margin: 1em 0px 1em 0px;
+	text-align: center;
+	font-family: Raleway;
+	font-weight: bold;
+	color: #000;
 }
