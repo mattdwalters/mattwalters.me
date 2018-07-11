@@ -31,9 +31,10 @@
 	transition:all 0.2s;
 	text-decoration:none;
 	color: #fd4242;
+	cursor: pointer;
 }
 
-#contact-button {
+.contact-button {
 	transition: all 0.3s ease-in-out;
 	border: 2px solid black;
 	padding: 0.75em 2em .75em 2em;
@@ -41,10 +42,11 @@
 	border-radius: 25px;
 }
 
-#contact-button:hover {
+.contact-button:hover {
 	text-decoration: none;
 	color: #fd4242;
 	border-color: #fd4242;
+	cursor: pointer;
 }
 
 ul {
@@ -112,6 +114,7 @@ ul li a {
 	text-decoration: none;
 	color: #fd4242;
 	font-size: 28px;
+	cursor: pointer;
 }
 
 .arrow {
@@ -124,6 +127,10 @@ ul li a {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.up {
+	transform: rotate(225deg);
 }
 
 #about {
@@ -306,8 +313,67 @@ figure.effect:hover p {
 	transform: translate3d(0,0,0);
 }
 
-#contact { padding-bottom: 200px; }
-#contact h2, #contact .row * { color: #FFFFFF; }
-#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
-#contact a .icon { float: left; margin-right: 20px; }
-#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+.contact {
+	margin: 1em 0px 1em 0px;
+	text-align: center;
+	font-family: Raleway;
+	font-weight: bold;
+	color: #000;
+}
+
+#contact-header {
+	margin: 1em 0px 1em 0px;
+	text-align: center;
+	font-family: Raleway;
+	color: #fff;
+}
+
+.contact-logo {
+	display:inline-block;
+	width: 64px;
+	height: 64px;
+}
+
+.contact a {
+	display: block;
+	line-height: 32px;
+	margin-bottom: 20px;
+	color: #fff;
+	opacity: 0.6; filter:alpha(opacity=60);
+}
+
+.contact a:hover{
+	opacity: 1;
+	filter:alpha(opacity=100);
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact li {
+	width: 20em;
+	display: block;
+	margin: 0em 3em 1em 0em;
+}
+
+#contact-container {
+	text-align:center;
+}
+
+#contact-container .contact{
+	display: inline-block;
+	text-align:initial;
+	margin: auto;
+}
+
+#logo-bottom-container {
+	text-align:center;
+}
+#logo-bottom-container #logo-bottom{
+	display:inline-block;
+	text-align: initial;
+	margin:auto;
+}
+
+#logo-bottom li {
+	display:block;
+}

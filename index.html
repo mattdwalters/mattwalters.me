@@ -18,24 +18,21 @@
 	<!-- Navbar -->
 	<div class = "container-fluid">
 		<div id = "navbar" class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<ul class>
+			<ul>
 				<li id = "logo-container">
 					<a class = "navbar-tab" href = "#"><img id = "logo" src = "images/logo-mw.png"></a>
 				</li>
 				<li>
-					<a id = "contact-button" class = "navbar-tab hidden-sm hidden-xs" href = "#">CONTACT</a>
+					<a class = "to-contact contact-button navbar-tab hidden-sm hidden-xs">CONTACT</a>
 				</li>
 				<li>
-					<a class = "nav-button navbar-tab hidden-sm hidden-xs" target = "_blank" href = "#">RESUME</a>
+					<a class = "nav-button navbar-tab hidden-sm hidden-xs" target = "_blank">RESUME</a>
 				</li>
 				<li>
-					<a class = "nav-button navbar-tab hidden-sm hidden-xs" href = "#">PROJECTS</a>
+					<a class = "to-projects nav-button navbar-tab hidden-sm hidden-xs">PROJECTS</a>
 				</li>
 				<li>
-					<a class = "nav-button navbar-tab hidden-sm hidden-xs" href = "#">ABOUT</a>
-				</li>
-				<li>
-					<a class = "nav-button navbar-tab hidden-sm hidden-xs" href = "#">HOME</a>
+					<a class = "to-about nav-button navbar-tab hidden-sm hidden-xs">ABOUT</a>
 				</li>
 			</ul>
 		</div>
@@ -52,19 +49,19 @@
 			</div>
 			<div class = "col-lg-5 col-xs-12">
 				<div class = "landing-text" style = "background-color: #fff">
-					<h3 class = "welcome-text">I like to <a class = "inline-link" href = "#">develop</a> 
-					and <a class = "inline-link" href = "#">design</a> things that make life easy.</h3>
+					<h3 class = "welcome-text">I like to <a class = "to-projects dev-tab inline-link">develop</a> 
+					and <a class = "to-projects design-tab inline-link">design</a> things that make life easy.</h3>
 					<h3 class = "welcome-text">I am currently a software engineering intern at Fannie Mae and  I study computer science at the University of Maryland.</h3>
 				</div>
 			</div>
-			<div class = "col-lg-12" style = "text-align: center; padding-top: 3em">
+			<div class = "to-about col-lg-12" style = "text-align: center; padding-top: 3em">
 				<a href = "#"><i class="arrow down"></i></a>
 			</div>
 		</div>
 	</div>
 
 	<!-- About Page -->
-	<div class = "jumbotron jumbotron-fluid" style = "background-color: #fd4242 !important">
+	<div id="begin-about" class = "jumbotron jumbotron-fluid" style = "background-color: #fd4242 !important">
 		<div class = "container-fluid">
 			<div class = "col-lg-12">
 				<h1 id = "about">About</h1>
@@ -79,7 +76,7 @@
 			<div class = "col-lg-4">
 				<img id = "about-profile" src = "images/profile.jpg">
 				<div id = "about-button-container">
-					<a class = "about-button" href = "#">Contact</a>
+					<a class = "to-contact about-button" href = "#">Contact</a>
 					<a class = "about-button" href = "#">Resume</a>
 				</div>
 			</div>
@@ -101,40 +98,18 @@
 	</div>
 
 	<!-- Projects Page -->
-	<div class = "jumbotron jumbotron-fluid">
+	<div id = "begin-projects" class = "jumbotron jumbotron-fluid">
 		<div class = "container-fluid">
 			<div class = "col-lg-12">
 				<h1 id = "projects-header">Projects</h1>
 			</div>
 			<div id = "projects-tabs" class = "col-lg-12">
-				<a id = "dev-tab"><div class = "projects-tab active">DEVELOPMENT</div></a>
-				<a id = "design-tab"><div class = "projects-tab">DESIGN</div></a>
+				<a class = "dev-tab"><div id = "development-select" class = "projects-tab active">DEVELOPMENT</div></a>
+				<a class = "design-tab"><div id = "design-select" class = "projects-tab">DESIGN</div></a>
 			</div>
 		</div>
 	</div>
-	<!--
-	<section class="card-container">
-	    <article class="card">
-	        <figure class="card-thumbnail">
-	            <a href = "#"><img src="images/musea_logo.png"></a>
-	        </figure>
-	        <main class="card__description">
-            	Lorem Ipsum dolor amet sun Lorem Ipsum dolor amet sun Lorem Ipsum dolor amet sun 
-        	</main>
-	    </article>
 
-	    <article class="card">
-	        <figure class="card-thumbnail">
-	            <a href = "#"><img src="images/musea_logo.png"></a>
-	        </figure>
-    	</article>
-
-	    <article class="card">
-	        <figure class="card-thumbnail">
-	            <a href = "#"><img src="images/musea_logo.png"></a>
-	        </figure>
-	    </article>
-	</section>-->
 	<div id="projects" class="container">
 		<div class="row">
 			<div class="design col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -207,34 +182,52 @@
 
 	</div>
 		
-	<div style = "background-color: #fd4242">
-		<div id="contact" class="container">
-			<h2>Contact</h2>
-
+	<div id="begin-contact" class = "jumbotron jumbotron-fluid" style = "background-color: #fd4242 !important">
+		<div class="container">
+			<h1 id = "about">Contact</h1>
+			<h2 id = "contact-header">
+			Feel free to reach out if you're interested in working with me!</h2>
+			<hr>
 			<div class="row">
-				<div class="col-md-6">
-					<ul class="no-bullets">
-						<li>
-							<a href="https://www.facebook.com/matt.walters.7568" target="_blank">
-								<span class="icon icon-twitter"></span>
-								Facebook				</a>
-						</li>
+				<div id = contact-container class="col-md-12">
+					<ul class = "contact">
 						<li>
 							<a href="https://www.linkedin.com/in/matthew-walters-699173129/" target="_blank">
-								<span class="icon icon-linkedin"></span>
-								LinkedIn				</a>
+								<img class = "contact-logo" src = "images/linkedin-logo.png">
+								<h4>LinkedIn</h4>
+							</a>
 						</li>
 						<li>
 							<a href="mailto:matthew.walters64@gmail.com">
-								<span class="icon icon-email"></span>
-								<span>
-									matthew.walters64@gmail.com				</span>
+								<img class = "contact-logo" src = "images/email-logo.png">
+								<h4>matthew.walters64@gmail.com</h4>
+							</a>
+						</li>
+					</ul>
+					<ul class = "contact">
+						<li>
+							<a href="https://github.com/mattdwalters" target = "_blank">
+								<img class = "contact-logo" src = "images/github-logo.png">
+								<h4>Github</h4>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/matt.walters.7568" target="_blank">
+								<img class = "contact-logo" src = "images/facebook-logo.png">
+								<h4>Facebook</h4>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
+			<hr>
 		</div>
 	</div>
+	<!--
+	<div class = "container-fluid">
+		<div class = "col-lg-12" style = "text-align: center; padding-top: 3em; padding-bottom: 2em">
+			<a id = "arrow-holder" href = "#"><i class="arrow up"></i></a>
+		</div>
+	</div>-->
 </body>
 </html>
